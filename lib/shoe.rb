@@ -30,14 +30,17 @@ BRANDS = []
     @brand = brand
     # BRANDS.push(brand)
     # BRANDS.push(brand)
-
-    BRANDS.each do |item|
-      if item != brand
-        BRANDS.push(brand)
-      else
-        puts "exists!"
-      end
-    end
+    if BRANDS.include?(brand)
+      puts "exists!"
+    else
+      BRANDS.push(brand)
+    # BRANDS.each do |item|
+    #   if item != brand
+    #     BRANDS.push(brand)
+    #   else
+    #     puts "exists!"
+    #   end
+    # end
   end
 
 
