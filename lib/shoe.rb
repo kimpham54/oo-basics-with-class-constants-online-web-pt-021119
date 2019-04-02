@@ -7,6 +7,10 @@ BRANDS = []
   def initialize(brand)
     @brand = brand
     puts "#{brand}"
+    if BRANDS.include?(brand)
+      puts "exists!"
+    else
+      BRANDS.push(brand)
     BRANDS.push(brand)
     # BRANDS.each do |item|
     #   if item == brand
@@ -26,6 +30,7 @@ BRANDS = []
     @brand = brand
     # BRANDS.push(brand)
     # BRANDS.push(brand)
+
     BRANDS.each do |item|
       if item != brand
         BRANDS.push(brand)
