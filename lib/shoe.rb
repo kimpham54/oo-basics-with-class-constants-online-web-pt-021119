@@ -25,4 +25,4 @@ BRANDS = []
   def brand=(brand)
     @brand = brand
     BRANDS.push(brand)
-# end
+end
