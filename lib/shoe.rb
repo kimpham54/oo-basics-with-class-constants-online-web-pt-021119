@@ -14,7 +14,6 @@ BRANDS = []
       else
         puts "exists!"
       end
-    end
   end
   end
 
@@ -34,4 +33,3 @@ BRANDS = []
       end
     end
   end
-end
