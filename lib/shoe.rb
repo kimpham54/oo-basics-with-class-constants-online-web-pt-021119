@@ -6,6 +6,15 @@ BRANDS = []
 
   def initialize(brand)
     @brand = brand
+    puts "#{brand}"
+    BRANDS.each do |item|
+      if item != brand
+        BRANDS.push(brand)
+      else
+        puts "exists!"
+      end
+    end
+  end
   end
 
   def cobble
@@ -16,14 +25,4 @@ BRANDS = []
   def brand=(brand)
     @brand = brand
     # BRANDS.push(brand)
-    puts "#{brand}"
-    BRANDS.each do |item|
-      if item != brand
-        BRANDS.push(brand)
-      else
-        puts "exists!"
-      end
-    end
-  end
-
 end
