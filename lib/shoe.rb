@@ -20,6 +20,8 @@ BRANDS = []
     BRANDS.each do |item|
       if item != brand
         BRANDS.push(brand)
+      else
+        puts "exists!"
       end
     end
   end
