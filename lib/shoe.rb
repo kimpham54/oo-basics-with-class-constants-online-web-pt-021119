@@ -7,7 +7,7 @@ BRANDS = []
   def initialize(brand)
     @brand = brand
     # puts "#{brand}"
-    BRANDS.push(brand)
+    # BRANDS.push(brand)
     BRANDS.each do |item|
       if item != brand
         BRANDS.push(brand)
