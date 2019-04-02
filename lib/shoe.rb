@@ -24,7 +24,7 @@ BRANDS = []
 
   def brand=(brand)
     @brand = brand
-    # BRANDS.push(brand)
+    BRANDS.push(brand)
     BRANDS.each do |item|
       if item != brand
         BRANDS.push(brand)
